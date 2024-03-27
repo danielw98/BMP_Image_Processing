@@ -69,6 +69,23 @@ int main() {
 }
 ```
 
+
+## Dive Into the Code
+
+The BMP Image Processing library's codebase consists of several key components:
+
+- `bmp.c` & `bmp.h`: These are central files where core functions such as `BMP_Open`, `BMP_Save`, and `BMP_Crop` are implemented. They provide the API for basic BMP image operations.
+
+- `lowlevel.c`: This contains low-level functions for handling BMP images, such as reading and writing pixels, which form the building blocks for higher-level operations.
+
+- `remove_background.c`: An example utility that demonstrates how to manipulate image pixels to remove the background, showcasing the library's capability to modify images.
+
+- `histogram.c`: It contains functions to generate and equalize histograms, essential for image analysis and enhancing contrast.
+
+- `checks.c`: Includes validation functions that ensure the integrity of BMP files being processed, guarding against common errors.
+
+For more details, check out the latest project structure in `bmp_new/`.
+
 ## Contributing
 
 Your contributions are very valuable! Feel free to enhance existing functionalities or add new ones to the BMP Image Processing library. Please fork the repository and submit a pull request with your improvements.
